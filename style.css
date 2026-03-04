@@ -1,0 +1,116 @@
+    body {
+    font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(135deg, #f0f6f5, #ffffff);
+    margin: 0;
+    padding: 0;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 850px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+h1 {
+    text-align: center;
+    color: #0b2545; 
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.question {
+    margin-bottom: 30px;
+}
+
+.question p {
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: #0b2545;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #0b2545;
+    transition: background 0.2s, transform 0.2s, color 0.2s;
+}
+
+label:hover {
+    background-color: #0b2545; 
+    color: #a3e635; 
+    transform: scale(1.02);
+}
+
+button {
+    display: block;
+    margin: 25px auto;
+    padding: 14px 30px;
+    background-color: #0b2545; 
+    color: #a3e635; 
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0d3a66; 
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 30px;
+    padding: 25px;
+    background: #e6f5e9; 
+    border-left: 5px solid #0b2545; 
+    border-radius: 12px;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.result h2 {
+    color: #0b2545; 
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .question p {
+        font-size: 1rem;
+    }
+
+    label {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}
